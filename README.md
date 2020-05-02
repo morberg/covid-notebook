@@ -1,4 +1,4 @@
-# Python notebook to visualize lag in Swedish covid reporting
+# Python notebooks for Covid-19 data
 Notebooks for analysing some Covid-19 data from different sources
 
 ## Reporting Lag
