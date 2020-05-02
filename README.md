@@ -9,5 +9,7 @@ You can work with this notebook on [Google Colab](https://colab.research.google.
 ## Total Death Count
 Based on data from Statistiska Centralbyrån. Interactive version on [Google Colab](https://colab.research.google.com/github/morberg/covid-notebook/blob/master/total-death-count.ipynb)
 
-This graph shows daily death count for four counties since 2018. 2018-2019 are shown as opaque points, 2020 as a line graph.
+This graph shows daily death count for four counties. Deaths from 2018-2019 are shown as opaque points, 2020 as a line graph.
 ![](images/daily-deaths-by-county.png?raw=true)
+
+![](images/daily-deaths-total.png?raw=true)
