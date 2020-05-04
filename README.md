@@ -7,12 +7,12 @@ Using data published by FHM and [processed by @adamaltmejd](https://github.com/a
 You can work with this notebook on [Google Colab](https://colab.research.google.com/github/morberg/covid-notebook/blob/master/covid-lag-sweden.ipynb).
 
 ## Total Death Count
-Based on data from Statistiska Centralbyrån. Interactive version on [Google Colab](https://colab.research.google.com/github/morberg/covid-notebook/blob/master/total-death-count.ipynb)
+Based on data from Statistiska Centralbyrån. Interactive version on [Google Colab](https://colab.research.google.com/github/morberg/covid-notebook/blob/master/county-data.ipynb)
 
 ### Total for Sweden
-Death count for 2015-2020. Gray is from 2015-2019. Orange is from 2020. The lines are 20 day rolling averages.
+Death count for 2018-2020. The lines are 20 day rolling averages.
 ![](images/daily-deaths-total.png?raw=true)
 
 ### Total by subset of counties
-This graph shows daily death count for four counties. Deaths from 2018-2019 are shown as opaque points, 2020 as a line graph. Choosing other counties should be quite straightforward if you look in the notebook.
+This graph shows daily death count for four counties. Deaths from 2018-2019 are shown as opaque points, 2020 as a line graph. If you [run the notebook](https://colab.research.google.com/github/morberg/covid-notebook/blob/master/county-data.ipynb) you can interactively select the counties you want.
 ![](images/daily-deaths-by-county.png?raw=true)
