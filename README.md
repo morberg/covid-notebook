@@ -6,7 +6,7 @@ Using data published by FHM and [processed by @adamaltmejd](https://github.com/a
 
 You can work with this notebook on [Google Colab](https://colab.research.google.com/github/morberg/covid-notebook/blob/master/covid-lag-sweden.ipynb).
 
-![https://morberg.github.io/covid-notebook/charts/filter-publication-date.html](images/example.gif)
+![](images/example.gif)
 There is an [interactive graph of daily deaths](https://morberg.github.io/covid-notebook/charts/filter-publication-date.html). Click and drag in bottom graph to select a time period for reported deaths to show in the upper graph.
 
 ## Total Death Count
