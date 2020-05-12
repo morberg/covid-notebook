@@ -45,5 +45,17 @@ def lag_chart_with_selection(df, labels):
         y=alt.Y('sum(n_diff)', title='Reported Deaths')
     ).add_selection(brush)
 
-    chart = (deceased & reported)
+    legend_vert = alt.Chart(df, width=80, title='Reporting Lag in Days').mark_bar().encode(
+        x=alt.X('sum(n_diff)', title='Reported Deaths'),
+        y=alt.Y('lag', title='', sort=labels),
+        color=alt.Color(
+            'lag:O',
+            sort=labels,
+            legend=None
+        )
+    ).transform_filter(
+        brush
+    )
+
+    chart = deceased & reported | legend_vert
     return chart
