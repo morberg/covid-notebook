@@ -80,6 +80,7 @@ def daily_reported_deaths(df, labels):
         color=alt.Color(
             'day(publication_date):N',
             title="Publication Day",
+            sort=['Mon']
         ),
     )
 
