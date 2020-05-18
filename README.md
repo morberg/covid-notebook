@@ -4,7 +4,7 @@ Notebooks for analysing some Covid-19 data from different sources. Feel free to 
 ## Reporting Lag
 Using data published by FHM and [processed by @adamaltmejd](https://github.com/adamaltmejd/covid).
 
-Follow links below for latest versions of the graphs or click on the image.
+You can see and interact with the graphs on [this page](https://morberg.github.io/covid-notebook/charts/index.html). Follow links below for individual versions of the graphs or click on the image.
 
 ### Daily reported deaths
 [![](images/example.gif)](https://morberg.github.io/covid-notebook/charts/filter-publication-date.html)
