@@ -52,3 +52,28 @@ def get_scb_county_data():
     data.deaths = data.deaths.fillna(0).astype(int)
 
     return data
+
+def merge_data(data_scb, data_fhm):
+    """
+    Merge data from SCB with data from FHM
+
+    Returns
+    -------
+    data : pandas.DataFrame
+        Data containing SCB and FHM statistics
+    """
+    scb = data_scb[data_scb.date.notna()].groupby('date').sum()
+    fhm = data_fhm.set_index('date').max(level='date')[['N']]
+
+    data = pd.concat([scb, fhm], axis=1, sort=False)
+    data = data[data.index.notna()]
+    data.columns=['non-covid', 'covid'] # 'non-covid' currently contains total number of deaths
+    data['non-covid'] = data['non-covid'].fillna(0) - data['covid'].fillna(0)
+    data = data.reset_index()
+    data = data.melt('date', var_name='death_cause', value_name='deaths')
+    data = data.fillna(0)
+    # FHM data is newer than SCB which will result in "negative" deaths in the tail. Remove tail.
+    last_date_to_include = data['date'][data.deaths < 0].min()
+    data = data[data['date'] < last_date_to_include]
+
+    return data
