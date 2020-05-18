@@ -57,5 +57,18 @@ def lag_chart_with_selection(df, labels):
         brush
     )
 
-    chart = deceased & reported | legend_vert
+    text = alt.Chart(df).transform_filter(
+        brush
+    ).transform_aggregate(
+        sum_deaths='sum(n_diff)'
+    ).transform_calculate(
+        text="Total deaths: " + alt.datum.sum_deaths
+    ).mark_text(
+        align='right',
+        x=792,
+        y=19, 
+        fontSize=18
+    ).encode(text='text:N')
+
+    chart = deceased + text & reported | legend_vert
     return chart
