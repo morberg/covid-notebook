@@ -72,3 +72,42 @@ def lag_chart_with_selection(df, labels):
 
     chart = deceased + text & reported | legend_vert
     return chart
+
+def daily_reported_deaths(df, labels):
+    hist = alt.Chart(df, height=100, width=100).mark_bar().encode(
+        x=alt.X('lag:O', title="Reporting Lag", sort=labels),
+        y=alt.Y('sum(n_diff):Q', title="Reported Deaths"),
+        color=alt.Color(
+            'day(publication_date):N',
+            title="Publication Day",
+        ),
+    )
+
+    text = alt.Chart(df).mark_text(align='right', x=95, y=28, fontSize=20).encode(
+        alt.Text('sum(n_diff)'),
+    )
+
+    chart = (hist + text).facet(
+        facet=alt.Facet('publication_date:T', title='Reported Deaths per Day'),
+        columns=7,
+    )
+
+    return chart
+
+def average_lag(df, start_date):
+    df1 = pd.DataFrame(df.groupby('publication_date')['n_diff'].sum())
+    df1['average_lag'] = df.groupby('publication_date')['age'].sum() / df.groupby('publication_date')['n_diff'].sum()
+    df1 = df1.reset_index()
+    df1 = df1[df1['publication_date'] >= start_date]
+
+    lag_chart = alt.Chart(
+        df1,
+        width=600,
+        title='Average Reporting Lag'
+    ).mark_trail().encode(
+        x=alt.X('publication_date', title='Publication Date'),
+        y=alt.Y('average_lag:Q', title='Daily Average Reporting Lag'),
+        size=alt.Size('n_diff', title='Reported Deaths'),
+    )
+
+    return lag_chart
