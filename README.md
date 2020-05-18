@@ -2,10 +2,23 @@
 Notebooks for analysing some Covid-19 data from different sources. Feel free to use the issue tracker for feedback and general discussion.
 
 ## Reporting Lag
+Follow links below for latest versions of the graphs or click on the image.
+
+### Daily reported deaths
 Using data published by FHM and [processed by @adamaltmejd](https://github.com/adamaltmejd/covid).
 
 [![](images/example.gif)](https://morberg.github.io/covid-notebook/charts/filter-publication-date.html)
-There is an [interactive graph of daily deaths](https://morberg.github.io/covid-notebook/charts/filter-publication-date.html). Click and drag in bottom graph to select a time period for reported deaths to show in the upper graph.
+[Interactive graph of daily deaths](https://morberg.github.io/covid-notebook/charts/filter-publication-date.html). Click and drag in bottom graph to select a time period for reported deaths to show in the upper graph.
+
+### Average lag by reporting date
+[![](images/lag-chart.png)](https://morberg.github.io/covid-notebook/charts/lag-chart.html)
+
+[Average lag](https://morberg.github.io/covid-notebook/charts/lag-chart.html) by reporting date. Line size is number of deaths reported each day.
+
+### Daily reported deaths faceted
+[![](images/daily-reported-deaths.png)](https://morberg.github.io/covid-notebook/charts/daily-reported-deaths.html)
+
+Shows a [histogram of reporting lag](https://morberg.github.io/covid-notebook/charts/daily-reported-deaths.html) for each reporting day. Column is weekday. Number is number of deaths reported that day.
 
 Some other graphs are available in the notebook. You can work with it live on [Google Colab](https://colab.research.google.com/github/morberg/covid-notebook/blob/master/covid-lag-sweden.ipynb).
 
