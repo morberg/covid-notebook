@@ -18,7 +18,7 @@ Follow links below for latest versions of the graphs or click on the image.
 ### Daily reported deaths faceted
 [![](images/daily-reported-deaths.png)](https://morberg.github.io/covid-notebook/charts/daily-reported-deaths.html)
 
-Shows a [histogram of reporting lag](https://morberg.github.io/covid-notebook/charts/daily-reported-deaths.html) for each reporting day. Column is weekday. Number is number of deaths reported that day.
+[Histogram of reporting lag](https://morberg.github.io/covid-notebook/charts/daily-reported-deaths.html) for each reporting day. Column is weekday. Number is number of deaths reported that day.
 
 Some other graphs are available in the notebook. You can work with it live on [Google Colab](https://colab.research.google.com/github/morberg/covid-notebook/blob/master/covid-lag-sweden.ipynb).
 
