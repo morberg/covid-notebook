@@ -1,4 +1,4 @@
-# Python notebooks for Covid-19 data
+# Python notebooks for Swedish Covid-19 data
 Notebooks for analysing some Covid-19 data from different sources. Feel free to use the issue tracker for feedback and general discussion.
 
 ## Reporting Lag
