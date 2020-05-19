@@ -1,5 +1,3 @@
-import altair as alt
-import pandas as pd
 from covid import dataimport
 from covid import chart
 
