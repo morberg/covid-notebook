@@ -42,7 +42,8 @@ def lag_chart_with_selection(df, labels):
 
     reported = alt.Chart(df, height=100, width=800).mark_bar().encode(
         x=alt.X('yearmonthdate(publication_date)', title='Publication Date', scale=alt.Scale(domain=domain)),
-        y=alt.Y('sum(n_diff)', title='Reported Deaths')
+        y=alt.Y('sum(n_diff)', title='Reported Deaths'),
+        tooltip=[alt.Tooltip('sum(n_diff)', title='Reported Deaths'), 'publication_date']
     ).add_selection(brush)
 
     legend_vert = alt.Chart(df, width=80, title='Reporting Lag in Days').mark_bar().encode(
