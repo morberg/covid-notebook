@@ -3,13 +3,20 @@
 
 <head>
   <title>Covid-19 graphs for Sweden</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.1.min.css" />
 </head>
 
 <body>
   <h1>Covid-19 graphs for Sweden</h1>
-  <p>Some data points have been trimmed to make graphs more legible. Some death dates are unknown (e.g. 23 unknown death
-    dates on May 19). This makes the total death toll in these graphs differ from official total numbers.</p>
+  <p>Total death toll in these graphs differ from official total numbers:
+  <ul>
+    <li>Old data points with few deaths have been trimmed to make graphs more legible</li>
+    <li>Some death dates are unknown (e.g. 23 unknown death
+      dates on May 19)</li>
+  </ul>
+  </p>
   <h2>Actual death date, reporting date, and lag</h2>
+  Interactive graph. Select reporting dates in the bottom graph by clicking and dragging.
   <iframe height="650" width="1100" src="filter-publication-date.html" title="Daily reported deaths"
     style="border:none;"></iframe>
   <h2>Average lag by reporting date</h2>
