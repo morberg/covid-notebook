@@ -1,0 +1,13 @@
+altair==4.1.0
+attrs==19.3.0
+entrypoints==0.3
+Jinja2==2.11.2
+jsonschema==3.2.0
+MarkupSafe==1.1.1
+numpy==1.18.4
+pandas==1.0.3
+pyrsistent==0.16.0
+python-dateutil==2.8.1
+pytz==2020.1
+six==1.14.0
+toolz==0.10.0
