@@ -7,9 +7,10 @@ on:
   push:
     branches: [ master ]
   schedule:
-      # Run job at 14:07 and 14:35 each day
+      # Depends on csv file generated daily at 14:02 and 14:30.
+      # @adamaltmejd's job takes 10-15 minutes to finish.
       # UTC is currently -2 wrt Europe/Stockholm (CEST).
-      - cron: "07,35 12 * * *"
+      - cron: "17,45 12 * * *"
 
 jobs:
   build:
