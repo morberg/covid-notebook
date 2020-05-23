@@ -29,7 +29,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        python -m pytest covid
+        pytest
     - name: Generate charts
       run: |
         python generate-html-charts.py
