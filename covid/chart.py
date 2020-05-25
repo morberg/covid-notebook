@@ -9,9 +9,9 @@ def lag_chart_with_selection(df, labels):
     Input
     -----
     df : pandas.DataFrame
-        Typically generated from get_fhm_data() in coviddata package
+        Typically generated from get_lag_data() in coviddata package
     labels : array
-        Labels for column 'lag' in data. Returned from get_fhm_data()
+        Labels for column 'lag' in data. Returned from get_lag_data()
 
     Returns
     -------
@@ -91,7 +91,17 @@ def lag_chart_with_selection(df, labels):
         .encode(text="text:N")
     )
 
-    chart = deceased + text & reported | legend_vert
+    prediction = (
+        alt.Chart(df)
+        .mark_bar(color="lightgray")
+        .encode(
+            x="yearmonthdate(date)",
+            y=alt.Y("prediction", aggregate={"argmax": "publication_date"}),
+        )
+        .transform_filter(brush)
+    )
+
+    chart = prediction + deceased + text & reported | legend_vert
     return chart
 
 

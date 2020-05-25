@@ -2,7 +2,7 @@ import pandas as pd
 import locale
 
 
-def get_fhm_data():
+def get_lag_data():
     """
     Download data published by Folkhälsomyndigheten processed by @adamaltmejd
 
@@ -32,14 +32,26 @@ def get_fhm_data():
     ]
 
     date_cols = ["date", "publication_date"]
-    data = pd.read_csv(
+    df1 = pd.read_csv(
         "https://raw.githubusercontent.com/adamaltmejd/covid/master/data/covid_deaths_latest.csv",
+        parse_dates=date_cols,
+    ).set_index(["date", "publication_date"])
+
+    df1["lag"] = pd.cut(df1["days_since_publication"], bins, labels=labels)
+    df1["age"] = df1.days_since_publication * df1.n_diff
+
+    date_cols = ["prediction_date", "date"]
+    df2 = pd.read_csv(
+        "https://raw.githubusercontent.com/adamaltmejd/covid/master/data/predictions.csv",
         parse_dates=date_cols,
     )
 
-    data["lag"] = pd.cut(data["days_since_publication"], bins, labels=labels)
-    data["age"] = data.days_since_publication * data.n_diff
-    return data, labels
+    df2 = df2.rename(
+        columns={"prediction_date": "publication_date", "total": "prediction"}
+    )
+    df2 = df2.set_index(["date", "publication_date"])[["prediction"]]
+    merged = pd.concat([df1, df2], axis=1, sort=False).reset_index()
+    return merged, labels
 
 
 def get_scb_county_data():
