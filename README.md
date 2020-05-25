@@ -1,7 +1,7 @@
 # Python notebooks for Swedish Covid-19 data
 Notebooks for analysing some Covid-19 data from different sources.
 
-Feel free to use the issue tracker for feedback and general discussion. You can see and interact with some graphs on [this page](https://morberg.github.io/covid-notebook/charts/index.html) without setting up a Jupyter notebook environment.
+Feel free to use the issue tracker for feedback and general discussion. You can view and interact with some graphs on [this page](https://morberg.github.io/covid-notebook/charts/index.html) without setting up a Jupyter notebook environment.
 
 ## Reporting Lag
 Based on data published by FHM and [processed by @adamaltmejd](https://github.com/adamaltmejd/covid).
