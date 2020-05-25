@@ -93,7 +93,7 @@ def lag_chart_with_selection(df, labels):
 
     prediction = (
         alt.Chart(df)
-        .mark_bar(color="lightgray")
+        .mark_bar(color="#E8E8E8")
         .encode(
             x="yearmonthdate(date)",
             y=alt.Y("prediction", aggregate={"argmax": "publication_date"}),
