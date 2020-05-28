@@ -72,7 +72,7 @@ def lag_chart_with_selection(df, labels):
     )
 
     legend_vert = (
-        alt.Chart(df, width=80, title="Reporting Lag in Days")
+        alt.Chart(df, width=80, title="Lag in Days")
         .mark_bar()
         .encode(
             x=alt.X("sum(n_diff)", title="Reported Deaths"),
