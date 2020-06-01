@@ -118,7 +118,8 @@ def merge_data(data_scb, data_fhm):
     data.columns = [
         "non-covid",
         "covid",
-    ]  # 'non-covid' currently contains total number of deaths
+    ]
+    # 'non-covid' currently contains total number of deaths
     data["non-covid"] = data["non-covid"].fillna(0) - data["covid"].fillna(0)
     data = data.reset_index()
     data = data.melt("date", var_name="death_cause", value_name="deaths")
