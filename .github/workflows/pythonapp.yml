@@ -7,9 +7,9 @@ on:
   push:
     branches: [ master ]
   schedule:
-      # Depends on csv file generated daily at 14:27-ish.
+      # Depends on csv file generated daily at 14:15-ish.
       # UTC is currently -2 wrt Europe/Stockholm (CEST).
-      - cron: "28,55 12 * * *"
+      - cron: "20 12 * * *"
 
 jobs:
   build:

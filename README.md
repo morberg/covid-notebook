@@ -1,5 +1,5 @@
 # Python notebooks for Swedish Covid-19 data
-Notebooks for analysing some Covid-19 data from different sources.
+Notebooks for analysing some Covid-19 data from FHM and SCB.
 
 Feel free to use the issue tracker for feedback and general discussion. You can view and interact with most of the graphs on [this page](https://morberg.github.io/covid-notebook/charts/index.html) without setting up a Jupyter notebook environment.
 
