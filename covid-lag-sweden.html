@@ -6,22 +6,6 @@
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;file:///Users/niklas/Developer/github/covid-notebook/data/fhm.json&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -45,12 +29,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-0b04589ebf684a858c11bcef9999d3c0"></div>
+<div id="altair-viz-9182f054a71a435c853e0ad443ca3d63"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0b04589ebf684a858c11bcef9999d3c0") {
-      outputDiv = document.getElementById("altair-viz-0b04589ebf684a858c11bcef9999d3c0");
+    if (outputDiv.id !== "altair-viz-9182f054a71a435c853e0ad443ca3d63") {
+      outputDiv = document.getElementById("altair-viz-9182f054a71a435c853e0ad443ca3d63");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -119,12 +103,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-18d9025f04b7486599701438eedc2c51"></div>
+<div id="altair-viz-62fa5c327b5348ffbd844d16ea9ee443"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-18d9025f04b7486599701438eedc2c51") {
-      outputDiv = document.getElementById("altair-viz-18d9025f04b7486599701438eedc2c51");
+    if (outputDiv.id !== "altair-viz-62fa5c327b5348ffbd844d16ea9ee443") {
+      outputDiv = document.getElementById("altair-viz-62fa5c327b5348ffbd844d16ea9ee443");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -166,7 +150,7 @@
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "file:///Users/niklas/Developer/github/covid-notebook/data/fhm.json"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "publication_date", "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Publication Day"}, "order": {"type": "nominal", "field": "publication_date"}, "x": {"type": "nominal", "field": "publication_week", "title": "Publication Week"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}}, "title": {"text": "Weekly Reported COVID-19  Deaths in Sweden", "subtitle": "Data updated 2020-06-12"}, "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "publication_date", "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Publication Day"}, "order": {"type": "nominal", "field": "publication_date"}, "x": {"type": "nominal", "field": "publication_week", "title": "Publication Week"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}}, "title": {"text": "Weekly Reported COVID-19  Deaths in Sweden", "subtitle": "Data updated 2020-06-12"}, "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -193,12 +177,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-e443764e8d3b46d1b5240feb8bea5609"></div>
+<div id="altair-viz-e141f52edab94dd2a27181e168f43af4"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e443764e8d3b46d1b5240feb8bea5609") {
-      outputDiv = document.getElementById("altair-viz-e443764e8d3b46d1b5240feb8bea5609");
+    if (outputDiv.id !== "altair-viz-e141f52edab94dd2a27181e168f43af4") {
+      outputDiv = document.getElementById("altair-viz-e141f52edab94dd2a27181e168f43af4");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -240,7 +224,7 @@
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "file:///Users/niklas/Developer/github/covid-notebook/data/fhm.json"}, "facet": {"type": "temporal", "field": "publication_date", "title": "Reported Deaths per Day"}, "spec": {"layer": [{"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "publication_date", "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Publication Day"}, "x": {"type": "ordinal", "field": "lag", "sort": ["Same day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12+"], "title": "Reporting Lag"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}}, "height": 100, "width": 100}, {"mark": {"type": "text", "align": "right", "fontSize": 20, "x": 95, "y": 28}, "encoding": {"text": {"type": "quantitative", "aggregate": "sum", "field": "n_diff"}}}]}, "columns": 7, "transform": [{"filter": "datum.date >= datetime(2020,3,6)"}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "facet": {"type": "temporal", "field": "publication_date", "title": "Reported Deaths per Day"}, "spec": {"layer": [{"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "publication_date", "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Publication Day"}, "x": {"type": "ordinal", "field": "lag", "sort": ["Same day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12+"], "title": "Reporting Lag"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}}, "height": 100, "width": 100}, {"mark": {"type": "text", "align": "right", "fontSize": 20, "x": 95, "y": 28}, "encoding": {"text": {"type": "quantitative", "aggregate": "sum", "field": "n_diff"}}}]}, "columns": 7, "transform": [{"filter": "datum.date >= datetime(2020,3,6)"}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -267,12 +251,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-e9165bba110f4eec829f422c453b38ce"></div>
+<div id="altair-viz-c18cfc7eee3f418d8e83ce4a511b208d"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e9165bba110f4eec829f422c453b38ce") {
-      outputDiv = document.getElementById("altair-viz-e9165bba110f4eec829f422c453b38ce");
+    if (outputDiv.id !== "altair-viz-c18cfc7eee3f418d8e83ce4a511b208d") {
+      outputDiv = document.getElementById("altair-viz-c18cfc7eee3f418d8e83ce4a511b208d");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -334,12 +318,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-e4d4a283e14a48d78ffd242d2c7c5177"></div>
+<div id="altair-viz-200710de8611436d95a1eee6bb9c550d"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e4d4a283e14a48d78ffd242d2c7c5177") {
-      outputDiv = document.getElementById("altair-viz-e4d4a283e14a48d78ffd242d2c7c5177");
+    if (outputDiv.id !== "altair-viz-200710de8611436d95a1eee6bb9c550d") {
+      outputDiv = document.getElementById("altair-viz-200710de8611436d95a1eee6bb9c550d");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -401,12 +385,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-e1c18bbf40fd41d69fd979491715d0a6"></div>
+<div id="altair-viz-6b5b649ddff0425581f961f07a1f4086"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e1c18bbf40fd41d69fd979491715d0a6") {
-      outputDiv = document.getElementById("altair-viz-e1c18bbf40fd41d69fd979491715d0a6");
+    if (outputDiv.id !== "altair-viz-6b5b649ddff0425581f961f07a1f4086") {
+      outputDiv = document.getElementById("altair-viz-6b5b649ddff0425581f961f07a1f4086");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -456,6 +440,12 @@
 
 </div>
 </div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
 
 </div>
  
