@@ -22,4 +22,4 @@ def test_lag_data():
     )
     assert pd.api.types.is_datetime64_ns_dtype(lag_data.date)
     assert pd.api.types.is_datetime64_ns_dtype(lag_data.publication_date)
-    assert labels[0] == "Same day"
+    assert labels[0] == "0"
