@@ -51,6 +51,8 @@ def get_lag_data():
     )
     df2 = df2.set_index(["date", "publication_date"])[["prediction"]]
     merged = pd.concat([df1, df2], axis=1, sort=False).reset_index()
+    merged["publication_week"] = merged.publication_date.dt.week
+
     return merged, labels
 
 

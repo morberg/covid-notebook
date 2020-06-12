@@ -17,6 +17,7 @@ def test_lag_data():
             "lag",
             "age",
             "prediction",
+            "publication_week",
         ]
     )
     assert pd.api.types.is_datetime64_ns_dtype(lag_data.date)
