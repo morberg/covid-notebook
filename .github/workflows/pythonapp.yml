@@ -9,7 +9,7 @@ on:
   schedule:
       # Depends on csv file generated daily at 14:15-ish.
       # UTC is currently -2 wrt Europe/Stockholm (CEST).
-      - cron: "20 12 * * *"
+      - cron: "17 12 * * *"
 
 jobs:
   build:
