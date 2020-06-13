@@ -1,3 +1,6 @@
+.PHONY: all
+all: html charts
+
 html: lag header.html covid-sweden.html footer.html
 	cat header.html covid-sweden.html footer.html > covid.html
 
