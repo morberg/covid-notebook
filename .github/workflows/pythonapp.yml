@@ -9,7 +9,7 @@ on:
   schedule:
       # Depends on csv file generated daily at 14:15-ish.
       # UTC is currently -2 wrt Europe/Stockholm (CEST).
-      - cron: "20 12 * * *"
+      - cron: "17 12 * * *"
 
 jobs:
   build:
@@ -36,9 +36,10 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Generate charts
+    - name: Generate HTML and charts
       run: |
-        python generate-html-charts.py
+        make html
+        make charts
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automatic update of charts
