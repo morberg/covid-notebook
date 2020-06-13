@@ -38,8 +38,7 @@ jobs:
         pytest
     - name: Generate HTML and charts
       run: |
-        make html
-        make charts
+        make all
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automatic update of charts
