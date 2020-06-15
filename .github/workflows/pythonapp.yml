@@ -36,8 +36,11 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Check available locales
+    - name: Install and check available locales
       run: |
+        sudo locale-gen sv_SE
+        sudo locale-gen sv_SE.UTF-8
+        sudo update-locale 
         locale -a
     - name: Generate HTML and charts
       run: |
