@@ -13,6 +13,8 @@ excess:
 	jupyter-nbconvert --execute --ExecutePreprocessor.kernel_name=python3 --to html \
 		--template basic --no-input --no-prompt excess-mortality.ipynb
 
+update:
+	python update-data.py
 
 .PHONY: charts
 charts:
