@@ -19,7 +19,8 @@
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Total-weekly-deaths">Total weekly deaths<a class="anchor-link" href="#Total-weekly-deaths">&#182;</a></h2><p>Charts that show excess mortality in 2020 compared to 2018-2019. Based on data <a href="https://scb.se/hitta-statistik/statistik-efter-amne/befolkning/befolkningens-sammansattning/befolkningsstatistik/pong/tabell-och-diagram/preliminar-statistik-over-doda/">published weekly by Statistiska Centralbyrån</a>. Numbers for Covid-19 deaths from FHM. Due to reporting lag the data for the last two weeks will change.</p>
+<h1 id="Excess-mortality-in-Sweden-2020">Excess mortality in Sweden 2020<a class="anchor-link" href="#Excess-mortality-in-Sweden-2020">&#182;</a></h1><p>Charts that show excess mortality in 2020 compared to 2018-2019. Based on data <a href="https://scb.se/hitta-statistik/statistik-efter-amne/befolkning/befolkningens-sammansattning/befolkningsstatistik/pong/tabell-och-diagram/preliminar-statistik-over-doda/">published weekly by Statistiska Centralbyrån</a>. Due to reporting lag the data for the last two weeks will change.</p>
+<h2 id="Total-weekly-deaths">Total weekly deaths<a class="anchor-link" href="#Total-weekly-deaths">&#182;</a></h2><p>Numbers for Covid-19 deaths from FHM marked in orange.</p>
 
 </div>
 </div>
@@ -34,12 +35,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-7950317c9779455aa876769a29c31480"></div>
+<div id="altair-viz-ac68307cf8e1426589c84dad948c8dc4"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7950317c9779455aa876769a29c31480") {
-      outputDiv = document.getElementById("altair-viz-7950317c9779455aa876769a29c31480");
+    if (outputDiv.id !== "altair-viz-ac68307cf8e1426589c84dad948c8dc4") {
+      outputDiv = document.getElementById("altair-viz-ac68307cf8e1426589c84dad948c8dc4");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -81,7 +82,7 @@
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "size": 14}, "encoding": {"color": {"type": "nominal", "field": "death_cause", "sort": "descending", "title": "2020"}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": "Month"}, "y": {"type": "quantitative", "field": "deaths", "title": "Weekly Deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-06-12 by SCB"}, "transform": [{"filter": "year(datum.date) == 2020"}], "width": 800}, {"mark": {"type": "line", "opacity": 1, "size": 3}, "encoding": {"color": {"type": "nominal", "field": "date", "scale": {"range": ["#b9b9b9", "#898989"]}, "timeUnit": "year", "title": ""}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": "Month"}, "y": {"type": "quantitative", "aggregate": "mean", "field": "sum_deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-06-12 by SCB"}, "transform": [{"filter": "year(datum.date) < 2020"}, {"aggregate": [{"op": "sum", "field": "deaths", "as": "sum_deaths"}], "groupby": ["date"]}], "width": 800}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/combined.json"}, "resolve": {"scale": {"color": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "size": 14}, "encoding": {"color": {"type": "nominal", "field": "death_cause", "sort": "descending", "title": "2020"}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": "Month"}, "y": {"type": "quantitative", "field": "deaths", "title": "Weekly Deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-06-12 by SCB"}, "transform": [{"filter": "year(datum.date) == 2020"}], "width": 800}, {"mark": {"type": "line", "opacity": 1, "size": 3}, "encoding": {"color": {"type": "nominal", "field": "date", "scale": {"range": ["#b9b9b9", "#898989"]}, "timeUnit": "year", "title": ""}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": "Month"}, "y": {"type": "quantitative", "aggregate": "mean", "field": "sum_deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-06-12 by SCB"}, "transform": [{"filter": "year(datum.date) < 2020"}, {"aggregate": [{"op": "sum", "field": "deaths", "as": "sum_deaths"}], "groupby": ["date"]}], "width": 800}], "data": {"url": "data/combined.json"}, "resolve": {"scale": {"color": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -108,12 +109,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-9bcedb785a804e2490706f8c05d648f5"></div>
+<div id="altair-viz-88b9ddafda2e4be983d2dd2c70b9e415"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9bcedb785a804e2490706f8c05d648f5") {
-      outputDiv = document.getElementById("altair-viz-9bcedb785a804e2490706f8c05d648f5");
+    if (outputDiv.id !== "altair-viz-88b9ddafda2e4be983d2dd2c70b9e415") {
+      outputDiv = document.getElementById("altair-viz-88b9ddafda2e4be983d2dd2c70b9e415");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -182,12 +183,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-79e697627cff48f3b820cb73d1757f7e"></div>
+<div id="altair-viz-4b98a9ec1afd424abb49cf2c9fd8ccdc"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-79e697627cff48f3b820cb73d1757f7e") {
-      outputDiv = document.getElementById("altair-viz-79e697627cff48f3b820cb73d1757f7e");
+    if (outputDiv.id !== "altair-viz-4b98a9ec1afd424abb49cf2c9fd8ccdc") {
+      outputDiv = document.getElementById("altair-viz-4b98a9ec1afd424abb49cf2c9fd8ccdc");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -237,9 +238,6 @@
 
 </div>
 </div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
 
 </div>
  
