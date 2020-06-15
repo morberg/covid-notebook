@@ -1,5 +1,5 @@
 .PHONY: all
-all: html charts
+all: update html charts
 
 html: lag excess header.html covid-sweden.html excess-mortality.html footer.html
 	cat header.html covid-sweden.html footer.html > covid.html
@@ -13,6 +13,7 @@ excess:
 	jupyter-nbconvert --execute --ExecutePreprocessor.kernel_name=python3 --to html \
 		--template basic --no-input --no-prompt excess-mortality.ipynb
 
+.PHONY: update
 update:
 	python update-data.py
 
