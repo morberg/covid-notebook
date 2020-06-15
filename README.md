@@ -1,9 +1,11 @@
 # Python notebooks for Swedish Covid-19 data
 Notebooks for analysing some Covid-19 data from FHM and SCB.
 
-*June 12 2020*: [New graph published](https://morberg.github.io/covid-notebook/covid.html) showing weekly accumulated numbers.
+If you don't want to install a Jupyter notebook environment you can view the most useful charts on:
 
-Feel free to use the issue tracker for feedback and general discussion. You can view and interact with [many of the graphs](https://morberg.github.io/covid-notebook/charts/index.html) without setting up a Jupyter notebook environment.
+* [Covid statistics](https://morberg.github.io/covid-notebook/covid.html)
+* [Excess mortality](https://morberg.github.io/covid-notebook/excess.html)
+
 
 ## Reporting Lag
 Based on data published by FHM and [processed by @adamaltmejd](https://github.com/adamaltmejd/covid).
