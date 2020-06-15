@@ -36,6 +36,9 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Check available locales
+      run: |
+        locale -a
     - name: Generate HTML and charts
       run: |
         make all
