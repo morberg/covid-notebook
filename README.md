@@ -3,8 +3,8 @@ Notebooks for analysing some Covid-19 data from FHM and SCB.
 
 If you don't want to install a Jupyter notebook environment you can view the most useful charts on:
 
-* [Covid statistics](https://morberg.github.io/covid-notebook/covid.html) (updated daily)
-* [Excess mortality](https://morberg.github.io/covid-notebook/excess.html) (updated weekly)
+* [Covid statistics](https://morberg.github.io/covid-notebook/covid.html) (updated daily at 14:20)
+* [Excess mortality](https://morberg.github.io/covid-notebook/excess.html) (updated weekly on Mondays)
 
 
 ## Reporting Lag
