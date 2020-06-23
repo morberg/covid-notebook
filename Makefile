@@ -5,11 +5,11 @@ html: lag excess header.html covid-sweden.html excess-mortality.html footer.html
 	cat header.html covid-sweden.html footer.html > covid.html
 	cat header.html excess-mortality.html footer.html > excess.html
 
-lag:
+lag: update
 	jupyter-nbconvert --execute --ExecutePreprocessor.kernel_name=python3 --to html \
 		--template basic --no-input --no-prompt covid-sweden.ipynb
 
-excess:
+excess: update
 	jupyter-nbconvert --execute --ExecutePreprocessor.kernel_name=python3 --to html \
 		--template basic --no-input --no-prompt excess-mortality.ipynb
 
