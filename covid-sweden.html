@@ -38,12 +38,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-9e5ccc5c66454392b6b34c01aeeb2438"></div>
+<div id="altair-viz-32a72db72af04547b3a1c0a73dba451f"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9e5ccc5c66454392b6b34c01aeeb2438") {
-      outputDiv = document.getElementById("altair-viz-9e5ccc5c66454392b6b34c01aeeb2438");
+    if (outputDiv.id !== "altair-viz-32a72db72af04547b3a1c0a73dba451f") {
+      outputDiv = document.getElementById("altair-viz-32a72db72af04547b3a1c0a73dba451f");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -112,12 +112,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-d4007ab67aaa406fbac2a548704fcb85"></div>
+<div id="altair-viz-8ef6f0eafec045e0b39c315c85a92508"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d4007ab67aaa406fbac2a548704fcb85") {
-      outputDiv = document.getElementById("altair-viz-d4007ab67aaa406fbac2a548704fcb85");
+    if (outputDiv.id !== "altair-viz-8ef6f0eafec045e0b39c315c85a92508") {
+      outputDiv = document.getElementById("altair-viz-8ef6f0eafec045e0b39c315c85a92508");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -159,81 +159,7 @@
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "publication_date", "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Publication Day"}, "order": {"type": "nominal", "field": "publication_date"}, "x": {"type": "ordinal", "field": "publication_week", "title": "Publication Week"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "stack": "zero", "title": "Reported Deaths"}}, "title": {"text": "Weekly Reported Covid-19  Deaths in Sweden", "subtitle": "Updated on Monday, July 06"}}, {"mark": {"type": "text", "baseline": "bottom", "color": "black"}, "encoding": {"text": {"type": "quantitative", "aggregate": "sum", "field": "n_diff"}, "x": {"type": "ordinal", "field": "publication_week", "title": "Publication Week"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "stack": "zero", "title": "Reported Deaths"}}, "title": {"text": "Weekly Reported Covid-19  Deaths in Sweden", "subtitle": "Updated on Monday, July 06"}}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
-</script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Daily-reported-deaths-and-lag">Daily reported deaths and lag<a class="anchor-link" href="#Daily-reported-deaths-and-lag">&#182;</a></h2><p>Number of deaths reported by day and the lag in reporting for each death. Each column is a weekday and each row a week.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-
-<div id="altair-viz-e5f77d1e56844c9a942033afa78bfeba"></div>
-<script type="text/javascript">
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e5f77d1e56844c9a942033afa78bfeba") {
-      outputDiv = document.getElementById("altair-viz-e5f77d1e56844c9a942033afa78bfeba");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () => resolve(paths[lib]);
-        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName("head")[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === "function") {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript("vega")
-        .then(() => loadScript("vega-lite"))
-        .then(() => loadScript("vega-embed"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "facet": {"type": "temporal", "field": "publication_date", "title": "Reported Deaths per Day"}, "spec": {"layer": [{"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "publication_date", "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Publication Day"}, "x": {"type": "ordinal", "field": "lag", "sort": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12+"], "title": "Reporting Lag"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}}, "height": 100, "width": 100}, {"mark": {"type": "text", "align": "right", "fontSize": 20, "x": 95, "y": 28}, "encoding": {"text": {"type": "quantitative", "aggregate": "sum", "field": "n_diff"}}}]}, "columns": 7, "transform": [{"filter": "datum.date >= datetime(2020,3,6)"}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "publication_date", "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Publication Day"}, "order": {"type": "nominal", "field": "publication_date"}, "tooltip": [{"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}, {"type": "temporal", "field": "publication_date"}], "x": {"type": "ordinal", "field": "publication_week", "title": "Publication Week"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "stack": "zero", "title": "Reported Deaths"}}, "title": {"text": "Weekly Reported Covid-19  Deaths in Sweden", "subtitle": "Updated on Monday, July 06"}}, {"mark": {"type": "text", "baseline": "bottom", "color": "black"}, "encoding": {"text": {"type": "quantitative", "aggregate": "sum", "field": "n_diff"}, "x": {"type": "ordinal", "field": "publication_week", "title": "Publication Week"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "stack": "zero", "title": "Reported Deaths"}}, "title": {"text": "Weekly Reported Covid-19  Deaths in Sweden", "subtitle": "Updated on Monday, July 06"}}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
