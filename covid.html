@@ -51,12 +51,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-3a1d0218a0f84054a39c7804b4dea84b"></div>
+<div id="altair-viz-e130c8070253494bb32cb41cdf0a4ef0"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3a1d0218a0f84054a39c7804b4dea84b") {
-      outputDiv = document.getElementById("altair-viz-3a1d0218a0f84054a39c7804b4dea84b");
+    if (outputDiv.id !== "altair-viz-e130c8070253494bb32cb41cdf0a4ef0") {
+      outputDiv = document.getElementById("altair-viz-e130c8070253494bb32cb41cdf0a4ef0");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -110,6 +110,80 @@
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Deaths-reported-the-last-five-weeks">Deaths reported the last five weeks<a class="anchor-link" href="#Deaths-reported-the-last-five-weeks">&#182;</a></h2><p>Same info as in the graph above showing only the last five weeks.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-d719c5c79487413db22f195052dc2ea1"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-d719c5c79487413db22f195052dc2ea1") {
+      outputDiv = document.getElementById("altair-viz-d719c5c79487413db22f195052dc2ea1");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"vconcat": [{"layer": [{"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "lag", "scale": {"scheme": "category20c"}, "sort": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12+"], "title": "Lag in Days"}, "order": {"type": "nominal", "field": "days_since_publication", "sort": "ascending"}, "x": {"type": "temporal", "field": "date", "scale": {}, "timeUnit": "yearmonthdate", "title": "Date Deceased"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "scale": {}, "title": "Deceased"}}, "height": 400, "transform": [{"filter": {"selection": "selector001"}}, {"filter": "datum.date >= datetime(2020,2,13)"}]}, {"mark": {"type": "text", "align": "right", "fontSize": 18, "x": 692, "y": 19}, "encoding": {"text": {"type": "nominal", "field": "text"}}, "transform": [{"filter": {"selection": "selector001"}}, {"aggregate": [{"op": "sum", "field": "n_diff", "as": "sum_deaths"}]}, {"calculate": "('Total deaths: ' + datum.sum_deaths)", "as": "text"}]}], "width": 750}, {"mark": "bar", "encoding": {"tooltip": [{"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}, {"type": "temporal", "field": "publication_date"}], "x": {"type": "temporal", "field": "publication_date", "scale": {}, "timeUnit": "yearmonthdate", "title": "Publication Date"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}}, "height": 100, "selection": {"selector001": {"type": "interval", "encodings": ["x"]}}, "width": 750}], "transform": [{"filter": "dayofyear(datum.date) > (dayofyear(now()) - 35)"}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "lag", "legend": null, "sort": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12+"]}, "x": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}, "y": {"type": "ordinal", "field": "lag", "sort": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12+"], "title": ""}}, "title": "Lag in Days", "transform": [{"filter": {"selection": "selector001"}}], "width": 50}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Weekly-reported-deaths">Weekly reported deaths<a class="anchor-link" href="#Weekly-reported-deaths">&#182;</a></h2><p>Number of deaths reported each week with each publication weekday shown individually. Some weekdays (typically Saturday-Monday) tend to report lower numbers in reported deaths. This graph gives an idea of what the reported numbers have been previous weeks on the same weekday. Total for current week is number of reported deaths so far.</p>
 
 </div>
@@ -125,12 +199,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-21a5e2926e40411fb3d2f39f91d521b8"></div>
+<div id="altair-viz-111f775422c04405a13c6a19a5d2e450"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-21a5e2926e40411fb3d2f39f91d521b8") {
-      outputDiv = document.getElementById("altair-viz-21a5e2926e40411fb3d2f39f91d521b8");
+    if (outputDiv.id !== "altair-viz-111f775422c04405a13c6a19a5d2e450") {
+      outputDiv = document.getElementById("altair-viz-111f775422c04405a13c6a19a5d2e450");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
