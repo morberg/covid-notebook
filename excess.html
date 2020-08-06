@@ -19,7 +19,7 @@
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Excess-mortality-in-Sweden-2020">Excess mortality in Sweden 2020<a class="anchor-link" href="#Excess-mortality-in-Sweden-2020">&#182;</a></h1><p>Charts that show excess mortality in 2020 compared to 2018-2019. Based on data <a href="https://scb.se/hitta-statistik/statistik-efter-amne/befolkning/befolkningens-sammansattning/befolkningsstatistik/pong/tabell-och-diagram/preliminar-statistik-over-doda/">published weekly by Statistiska Centralbyrån</a>. Due to reporting lag the data for the last two weeks will change.</p>
+<h1 id="Excess-mortality-in-Sweden-2020">Excess mortality in Sweden 2020<a class="anchor-link" href="#Excess-mortality-in-Sweden-2020">&#182;</a></h1><p>Charts that show excess mortality in 2020 compared to 2018-2019. Based on data <a href="https://scb.se/hitta-statistik/statistik-efter-amne/befolkning/befolkningens-sammansattning/befolkningsstatistik/pong/tabell-och-diagram/preliminar-statistik-over-doda/">published weekly by Statistiska Centralbyrån</a>. Due to reporting lag the data for the last two weeks will change. These data points are still included but shown with less prominence.</p>
 <h2 id="Total-weekly-deaths">Total weekly deaths<a class="anchor-link" href="#Total-weekly-deaths">&#182;</a></h2><p>Numbers for Covid-19 deaths from FHM marked in orange.</p>
 
 </div>
@@ -35,12 +35,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-3609b886e764456da7e50b22fd68a529"></div>
+<div id="altair-viz-b0df425024fe40c4912a85206c635a61"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3609b886e764456da7e50b22fd68a529") {
-      outputDiv = document.getElementById("altair-viz-3609b886e764456da7e50b22fd68a529");
+    if (outputDiv.id !== "altair-viz-b0df425024fe40c4912a85206c635a61") {
+      outputDiv = document.getElementById("altair-viz-b0df425024fe40c4912a85206c635a61");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -109,12 +109,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-9fb61dd3f37749c3b2d3847082d977a9"></div>
+<div id="altair-viz-a665c32eb26b47c0b7c8ee2559636cf9"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9fb61dd3f37749c3b2d3847082d977a9") {
-      outputDiv = document.getElementById("altair-viz-9fb61dd3f37749c3b2d3847082d977a9");
+    if (outputDiv.id !== "altair-viz-a665c32eb26b47c0b7c8ee2559636cf9") {
+      outputDiv = document.getElementById("altair-viz-a665c32eb26b47c0b7c8ee2559636cf9");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -156,7 +156,7 @@
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"layer": [{"mark": {"type": "line", "opacity": 0.4, "size": 2}, "encoding": {"color": {"type": "nominal", "field": "date", "timeUnit": "year", "title": "Year"}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": null}, "y": {"type": "quantitative", "aggregate": "sum", "field": "deaths", "title": "Weekly Deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-07-29 by SCB"}, "transform": [{"filter": "year(datum.date) < 2020"}], "width": 700}, {"mark": {"type": "line", "opacity": 1, "size": 5}, "encoding": {"color": {"type": "nominal", "field": "date", "scale": {"range": ["#e45757"]}, "timeUnit": "year", "title": null}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": null}, "y": {"type": "quantitative", "aggregate": "sum", "field": "deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-07-29 by SCB"}, "transform": [{"filter": "year(datum.date) == 2020 & week(datum.date) < 31"}], "width": 700}], "resolve": {"scale": {"color": "independent"}}, "transform": [{"filter": {"selection": "selector001"}}]}, {"mark": {"type": "square", "size": 150}, "encoding": {"color": {"condition": {"value": "#e45757", "selection": "selector001"}, "value": "lightgrey"}, "tooltip": [{"type": "quantitative", "aggregate": "sum", "field": "deaths", "title": "Total Deaths 2020"}, {"type": "nominal", "field": "county"}], "x": {"type": "quantitative", "aggregate": "sum", "field": "deaths", "title": "Total Deaths 2020"}, "y": {"type": "nominal", "axis": {"orient": "right"}, "field": "county", "title": null}}, "height": 320, "selection": {"selector001": {"type": "multi", "toggle": "true", "encodings": ["y"]}, "selector002": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "transform": [{"filter": "year(datum.date) == 2020 & week(datum.date) < 31"}], "width": 60}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/scb.json"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"layer": [{"mark": {"type": "line", "opacity": 0.4, "size": 2}, "encoding": {"color": {"type": "nominal", "field": "date", "timeUnit": "year", "title": "Year"}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": null}, "y": {"type": "quantitative", "aggregate": "sum", "field": "deaths", "title": "Weekly Deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-07-29 by SCB"}, "transform": [{"filter": "year(datum.date) < 2020"}], "width": 700}, {"mark": {"type": "line", "opacity": 1, "size": 5}, "encoding": {"color": {"type": "nominal", "field": "date", "scale": {"range": ["#e45757"]}, "timeUnit": "year", "title": null}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": null}, "y": {"type": "quantitative", "aggregate": "sum", "field": "deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-07-29 by SCB"}, "transform": [{"filter": "year(datum.date) == 2020"}, {"filter": "dayofyear(datum.date) <= 201"}], "width": 700}, {"mark": {"type": "line", "opacity": 0.2, "size": 5}, "encoding": {"color": {"type": "nominal", "field": "death_cause", "legend": null, "scale": {"range": ["#e45757"]}}, "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": null}, "y": {"type": "quantitative", "aggregate": "sum", "field": "deaths"}}, "height": 400, "title": {"text": "Weekly Deaths in Sweden 2018-2020", "subtitle": "Data published 2020-07-29 by SCB"}, "transform": [{"filter": "year(datum.date) == 2020"}], "width": 700}], "resolve": {"scale": {"color": "independent"}}, "transform": [{"filter": {"selection": "selector001"}}]}, {"mark": {"type": "square", "size": 150}, "encoding": {"color": {"condition": {"value": "#e45757", "selection": "selector001"}, "value": "lightgrey"}, "tooltip": [{"type": "quantitative", "aggregate": "sum", "field": "deaths", "title": "Total Deaths 2020"}, {"type": "nominal", "field": "county"}], "x": {"type": "quantitative", "aggregate": "sum", "field": "deaths", "title": "Total Deaths 2020"}, "y": {"type": "nominal", "axis": {"orient": "right"}, "field": "county", "title": null}}, "height": 320, "selection": {"selector001": {"type": "multi", "toggle": "true", "encodings": ["y"]}, "selector002": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "width": 60}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/scb.json"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -168,7 +168,7 @@
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Cumulative-deaths-2018-2020-by-County">Cumulative deaths 2018-2020 by County<a class="anchor-link" href="#Cumulative-deaths-2018-2020-by-County">&#182;</a></h2><p>An illustration of excess deaths in 2020 per county compared to 2018 and 2019.</p>
+<h2 id="Cumulative-deaths-2018-2020-by-County">Cumulative deaths 2018-2020 by County<a class="anchor-link" href="#Cumulative-deaths-2018-2020-by-County">&#182;</a></h2><p>An illustration of excess deaths in 2020 per county compared to 2018 and 2019. Last two weeks of data in 2020 are shown as points since they will change.</p>
 
 </div>
 </div>
@@ -183,12 +183,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-a045f64dcc9c4f7e88822ac2830e15dc"></div>
+<div id="altair-viz-2b851d876f6d40f097db717ed2024361"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a045f64dcc9c4f7e88822ac2830e15dc") {
-      outputDiv = document.getElementById("altair-viz-a045f64dcc9c4f7e88822ac2830e15dc");
+    if (outputDiv.id !== "altair-viz-2b851d876f6d40f097db717ed2024361") {
+      outputDiv = document.getElementById("altair-viz-2b851d876f6d40f097db717ed2024361");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -230,7 +230,7 @@
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/scb.json"}, "facet": {"type": "nominal", "field": "county", "title": "Cumulative Deaths 2018-2020 by County"}, "spec": {"mark": "line", "encoding": {"color": {"type": "nominal", "field": "date", "scale": {"range": ["#d9d9d9", "#b9b9b9", "#e6550d"]}, "timeUnit": "year", "title": "Year"}, "tooltip": [{"type": "temporal", "field": "date"}, {"type": "quantitative", "field": "cumulative_deaths", "title": "Deaths"}], "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": "Date"}, "y": {"type": "quantitative", "field": "cumulative_deaths", "title": ""}}, "height": 160, "width": 160}, "columns": 4, "resolve": {"scale": {"y": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/scb.json"}, "facet": {"type": "nominal", "field": "county", "title": "Cumulative Deaths 2018-2020 by County"}, "spec": {"layer": [{"mark": "line", "encoding": {"color": {"type": "nominal", "field": "date", "scale": {"range": ["#d9d9d9", "#b9b9b9", "#e6550d"]}, "timeUnit": "year", "title": "Year"}, "tooltip": [{"type": "temporal", "field": "date"}, {"type": "quantitative", "field": "cumulative_deaths", "title": "Deaths"}], "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": "Date"}, "y": {"type": "quantitative", "field": "cumulative_deaths", "title": ""}}, "height": 220, "transform": [{"filter": "year(datum.date) < 2020"}], "width": 220}, {"mark": "line", "encoding": {"color": {"type": "nominal", "field": "date", "scale": {"range": ["#d9d9d9", "#b9b9b9", "#e6550d"]}, "timeUnit": "year", "title": "Year"}, "tooltip": [{"type": "temporal", "field": "date"}, {"type": "quantitative", "field": "cumulative_deaths", "title": "Deaths"}], "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": "Date"}, "y": {"type": "quantitative", "field": "cumulative_deaths", "title": ""}}, "height": 220, "transform": [{"filter": "dayofyear(datum.date) <= 201 && year(datum.date == 2020)"}], "width": 220}, {"mark": {"type": "circle", "opacity": 0.8, "size": 10}, "encoding": {"color": {"type": "nominal", "field": "date", "scale": {"range": ["#d9d9d9", "#b9b9b9", "#e6550d"]}, "timeUnit": "year", "title": "Year"}, "tooltip": [{"type": "temporal", "field": "date"}, {"type": "quantitative", "field": "cumulative_deaths", "title": "Deaths"}], "x": {"type": "temporal", "axis": {"format": "%b"}, "field": "date", "timeUnit": "monthdate", "title": "Date"}, "y": {"type": "quantitative", "field": "cumulative_deaths", "title": ""}}, "height": 220, "transform": [{"filter": "year(datum.date) == 2020 && dayofyear(datum.date) >= 201"}], "width": 220}]}, "columns": 3, "resolve": {"scale": {"y": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
