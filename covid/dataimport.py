@@ -127,7 +127,8 @@ def merge_data(data_scb, data_fhm):
     data = data.melt("date", var_name="death_cause", value_name="deaths")
     data = data.fillna(0)
     # FHM data is newer than SCB which will result in "negative" deaths in the tail. Remove tail.
-    last_date_to_include = data["date"][data.deaths < 0].min()
-    data = data[data["date"] < last_date_to_include]
+    # Currently broken, not sure how to fix
+    # last_date_to_include = data["date"][data.deaths < 0].min()
+    # data = data[data["date"] < last_date_to_include]
 
     return data
