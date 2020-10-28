@@ -6,8 +6,8 @@ name: Daily update of data and charts
 on:
   schedule:
       # Depends on csv file generated daily at 14:15-ish.
-      # UTC is currently -2 wrt Europe/Stockholm (CEST).
-      - cron: "17 12 * * *"
+      # UTC is currently -1 wrt Europe/Stockholm (CEST).
+      - cron: "17 13 * * *"
 
 jobs:
   build:
