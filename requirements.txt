@@ -1,4 +1,5 @@
 altair==4.1.0
+altair_morberg>=0.0.1
 attrs==19.3.0
 entrypoints==0.3
 Jinja2==2.11.2
