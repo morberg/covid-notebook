@@ -51,12 +51,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-5ce5b99c1bac4925afffffdacfe363f1"></div>
+<div id="altair-viz-1b2bf359b10448fdb226da952baedd66"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5ce5b99c1bac4925afffffdacfe363f1") {
-      outputDiv = document.getElementById("altair-viz-5ce5b99c1bac4925afffffdacfe363f1");
+    if (outputDiv.id !== "altair-viz-1b2bf359b10448fdb226da952baedd66") {
+      outputDiv = document.getElementById("altair-viz-1b2bf359b10448fdb226da952baedd66");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -98,7 +98,7 @@
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"axis": {"labelFontSize": 12, "labelColor": "#666", "titleFontSize": 14, "titleFontWeight": "normal", "titleColor": "#666"}, "axisX": {"grid": false, "gridWidth": 0.4}, "axisY": {"gridDash": [3], "gridWidth": 0.4}, "legend": {"titleFontSize": 14, "titleFontWeight": "normal", "titleColor": "#666", "labelColor": "#666", "labelFontSize": 13}, "font": "Avenir Next, sans-serif", "header": {"labelFontSize": 14, "labelColor": "#666", "titleFontSize": 16, "titleFontWeight": "normal", "titleColor": "#666"}, "headerRow": {"labelFontSize": 14, "labelColor": "#666"}, "title": {"anchor": "start", "frame": "group", "offset": 10, "fontSize": 24, "font": "Avenir Next Demi Bold"}, "view": {"strokeWidth": 0, "continuousWidth": 600, "continuousHeight": 400}}, "hconcat": [{"vconcat": [{"layer": [{"mark": {"type": "bar", "color": "#E8E8E8"}, "encoding": {"x": {"type": "temporal", "axis": {"format": "%b %Y", "tickCount": 12}, "field": "date", "timeUnit": "yearmonthdate"}, "y": {"type": "quantitative", "aggregate": {"argmax": "publication_date"}, "field": "prediction"}}, "transform": [{"filter": {"selection": "selector001"}}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "lag", "sort": ["12+", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"], "title": "Lag in Days"}, "order": {"type": "nominal", "field": "days_since_publication", "sort": "ascending"}, "x": {"type": "temporal", "field": "date", "scale": {"domain": ["2020-03-13", "2020-11-19"]}, "timeUnit": "yearmonthdate", "title": "Date Deceased"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "scale": {"domain": [0, 116.0]}, "title": "Deaths"}}, "height": 400, "transform": [{"filter": {"selection": "selector001"}}, {"filter": "datum.date >= datetime(2020,2,13)"}]}, {"mark": {"type": "text", "align": "right", "fontSize": 16, "x": 692, "y": 19}, "encoding": {"text": {"type": "nominal", "field": "text"}}, "transform": [{"filter": {"selection": "selector001"}}, {"aggregate": [{"op": "sum", "field": "n_diff", "as": "sum_deaths"}]}, {"calculate": "('Total deaths: ' + datum.sum_deaths)", "as": "text"}]}], "width": 750}, {"mark": "bar", "encoding": {"tooltip": [{"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}, {"type": "temporal", "field": "publication_date"}], "x": {"type": "temporal", "axis": {"format": "%b %Y", "tickCount": 12}, "field": "publication_date", "scale": {"domain": ["2020-03-13", "2020-11-19"]}, "timeUnit": "yearmonthdate", "title": "Publication Date"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "scale": {"domain": [0, 270]}, "title": "Deaths"}}, "height": 100, "selection": {"selector001": {"type": "interval", "encodings": ["x"]}}, "width": 750}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "lag", "legend": null, "sort": ["12+", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"]}, "x": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Deaths"}, "y": {"type": "ordinal", "field": "lag", "sort": ["12+", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"], "title": "Lag in Days"}}, "title": "", "transform": [{"filter": {"selection": "selector001"}}], "width": 50}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"axis": {"labelFontSize": 12, "labelColor": "#666", "titleFontSize": 14, "titleFontWeight": "normal", "titleColor": "#666"}, "axisX": {"grid": false, "gridWidth": 0.4}, "axisY": {"gridDash": [3], "gridWidth": 0.4}, "legend": {"titleFontSize": 14, "titleFontWeight": "normal", "titleColor": "#666", "labelColor": "#666", "labelFontSize": 13}, "font": "Avenir Next, sans-serif", "header": {"labelFontSize": 14, "labelColor": "#666", "titleFontSize": 16, "titleFontWeight": "normal", "titleColor": "#666"}, "headerRow": {"labelFontSize": 14, "labelColor": "#666"}, "title": {"anchor": "start", "frame": "group", "offset": 10, "fontSize": 24, "font": "Avenir Next Demi Bold"}, "view": {"strokeWidth": 0, "continuousWidth": 600, "continuousHeight": 400}}, "hconcat": [{"vconcat": [{"layer": [{"mark": {"type": "bar", "color": "#E8E8E8"}, "encoding": {"x": {"type": "temporal", "axis": {"format": "%b %Y", "tickCount": 12}, "field": "date", "timeUnit": "yearmonthdate"}, "y": {"type": "quantitative", "aggregate": {"argmax": "publication_date"}, "field": "prediction"}}, "transform": [{"filter": {"selection": "selector001"}}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "lag", "sort": ["12+", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"], "title": "Lag in Days"}, "order": {"type": "nominal", "field": "days_since_publication", "sort": "ascending"}, "x": {"type": "temporal", "field": "date", "scale": {"domain": ["2020-03-13", "2020-11-19"]}, "timeUnit": "yearmonthdate", "title": "Date Deceased"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "scale": {"domain": [0, 116.0]}, "title": ""}}, "height": 400, "transform": [{"filter": {"selection": "selector001"}}, {"filter": "datum.date >= datetime(2020,2,13)"}]}, {"mark": {"type": "text", "align": "right", "fontSize": 16, "x": 692, "y": 19}, "encoding": {"text": {"type": "nominal", "field": "text"}}, "transform": [{"filter": {"selection": "selector001"}}, {"aggregate": [{"op": "sum", "field": "n_diff", "as": "sum_deaths"}]}, {"calculate": "('Total deaths: ' + datum.sum_deaths)", "as": "text"}]}], "width": 750}, {"mark": "bar", "encoding": {"tooltip": [{"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}, {"type": "temporal", "field": "publication_date"}], "x": {"type": "temporal", "axis": {"format": "%b %Y", "tickCount": 12}, "field": "publication_date", "scale": {"domain": ["2020-03-13", "2020-11-19"]}, "timeUnit": "yearmonthdate", "title": "Publication Date"}, "y": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "scale": {"domain": [0, 270]}, "title": ""}}, "height": 100, "selection": {"selector001": {"type": "interval", "encodings": ["x"]}}, "width": 750}]}, {"mark": "bar", "encoding": {"color": {"type": "ordinal", "field": "lag", "legend": null, "sort": ["12+", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"]}, "x": {"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": ""}, "y": {"type": "ordinal", "field": "lag", "sort": ["12+", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0"], "title": "Lag in Days"}}, "title": "", "transform": [{"filter": {"selection": "selector001"}}], "width": 50}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -125,12 +125,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-baeb64fefafd4463ae5ded5321e1d6ed"></div>
+<div id="altair-viz-d2ed3fd2c8da419ba8ae8d98822711db"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-baeb64fefafd4463ae5ded5321e1d6ed") {
-      outputDiv = document.getElementById("altair-viz-baeb64fefafd4463ae5ded5321e1d6ed");
+    if (outputDiv.id !== "altair-viz-d2ed3fd2c8da419ba8ae8d98822711db") {
+      outputDiv = document.getElementById("altair-viz-d2ed3fd2c8da419ba8ae8d98822711db");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -199,12 +199,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-5ef409ba1ce34c629a9bc945f412aa05"></div>
+<div id="altair-viz-252d2366a1ee4f0f96bd12a9ee25ede7"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5ef409ba1ce34c629a9bc945f412aa05") {
-      outputDiv = document.getElementById("altair-viz-5ef409ba1ce34c629a9bc945f412aa05");
+    if (outputDiv.id !== "altair-viz-252d2366a1ee4f0f96bd12a9ee25ede7") {
+      outputDiv = document.getElementById("altair-viz-252d2366a1ee4f0f96bd12a9ee25ede7");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
