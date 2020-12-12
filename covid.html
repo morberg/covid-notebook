@@ -17,6 +17,9 @@
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Covid-19-graphs-for-Sweden">Covid-19 graphs for Sweden<a class="anchor-link" href="#Covid-19-graphs-for-Sweden">&#182;</a></h1><h2 id="Covid-19-death-date,-reporting-date,-and-lag">Covid-19 death date, reporting date, and lag<a class="anchor-link" href="#Covid-19-death-date,-reporting-date,-and-lag">&#182;</a></h2><p>Interactive graph showing the number of reported Covid-19 deaths in Sweden. Select dates in the bottom <em>Publication Date</em> graph by clicking and dragging. Gray bars is a prediction based on average lag for the past three weeks. See <a href="https://github.com/adamaltmejd/covid">Adam Altmejd's repo</a> for details.</p>
@@ -51,12 +54,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-00e9c4d21c664db4a1d213735d64d8ae"></div>
+<div id="altair-viz-282ae7e705ed461297f059a80b50cf71"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-00e9c4d21c664db4a1d213735d64d8ae") {
-      outputDiv = document.getElementById("altair-viz-00e9c4d21c664db4a1d213735d64d8ae");
+    if (outputDiv.id !== "altair-viz-282ae7e705ed461297f059a80b50cf71") {
+      outputDiv = document.getElementById("altair-viz-282ae7e705ed461297f059a80b50cf71");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -125,12 +128,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-ea9651c29f634132bbcff932a0e9ece4"></div>
+<div id="altair-viz-ee849002a2f541e2bf38ee3a4c285e45"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ea9651c29f634132bbcff932a0e9ece4") {
-      outputDiv = document.getElementById("altair-viz-ea9651c29f634132bbcff932a0e9ece4");
+    if (outputDiv.id !== "altair-viz-ee849002a2f541e2bf38ee3a4c285e45") {
+      outputDiv = document.getElementById("altair-viz-ee849002a2f541e2bf38ee3a4c285e45");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -184,7 +187,7 @@
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Weekly-reported-deaths">Weekly reported deaths<a class="anchor-link" href="#Weekly-reported-deaths">&#182;</a></h2><p>Number of deaths reported each week with each publication weekday shown individually. Since week 25 there are no numbers published on weekends. Since September 14 numbers are only published Tuesdays to Fridays.</p>
+<h2 id="Weekly-reported-deaths">Weekly reported deaths<a class="anchor-link" href="#Weekly-reported-deaths">&#182;</a></h2><p>Number of deaths reported each week with each publication weekday shown individually. Since week 2 no numbers are published on weekends. Since week 38 numbers are only published Tuesdays trough Fridays.</p>
 
 </div>
 </div>
@@ -199,12 +202,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-75edf04f68074905aa714816b352fee3"></div>
+<div id="altair-viz-65f4592070e14281858e3f2e04e09217"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-75edf04f68074905aa714816b352fee3") {
-      outputDiv = document.getElementById("altair-viz-75edf04f68074905aa714816b352fee3");
+    if (outputDiv.id !== "altair-viz-65f4592070e14281858e3f2e04e09217") {
+      outputDiv = document.getElementById("altair-viz-65f4592070e14281858e3f2e04e09217");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -247,6 +250,80 @@
         .then(() => displayChart(vegaEmbed));
     }
   })({"config": {"axis": {"labelFontSize": 12, "labelColor": "#666", "titleFontSize": 14, "titleFontWeight": "normal", "titleColor": "#666"}, "axisX": {"grid": false, "gridWidth": 0.4}, "axisY": {"gridDash": [3], "gridWidth": 0.4}, "legend": {"titleFontSize": 14, "titleFontWeight": "normal", "titleColor": "#666", "labelColor": "#666", "labelFontSize": 13, "columns": 2, "orient": "top-right"}, "font": "Avenir Next, sans-serif", "header": {"labelFontSize": 14, "labelColor": "#666", "titleFontSize": 16, "titleFontWeight": "normal", "titleColor": "#666"}, "headerRow": {"labelFontSize": 14, "labelColor": "#666"}, "title": {"anchor": "start", "frame": "group", "offset": 10, "fontSize": 24, "font": "Avenir Next Demi Bold"}, "view": {"strokeWidth": 0, "continuousWidth": 600, "continuousHeight": 400}}, "layer": [{"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "publication_date", "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Publication Day"}, "order": {"type": "nominal", "field": "publication_date"}, "tooltip": [{"type": "quantitative", "aggregate": "sum", "field": "n_diff", "title": "Reported Deaths"}, {"type": "temporal", "field": "publication_date"}], "x": {"type": "ordinal", "axis": {"offset": -30}, "field": "publication_week", "title": "Publication Week"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": null, "field": "n_diff", "stack": "zero"}}, "title": {"text": "Weekly Reported Covid-19  Deaths in Sweden", "subtitle": "Updated on Friday, December 11"}}, {"mark": {"type": "text", "baseline": "bottom", "color": "black", "fontSize": 9}, "encoding": {"text": {"type": "quantitative", "aggregate": "sum", "field": "n_diff"}, "x": {"type": "ordinal", "axis": {"offset": -30}, "field": "publication_week", "title": "Publication Week"}, "y": {"type": "quantitative", "aggregate": "sum", "axis": null, "field": "n_diff", "stack": "zero"}}, "title": {"text": "Weekly Reported Covid-19  Deaths in Sweden", "subtitle": "Updated on Friday, December 11"}}], "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/fhm.json"}, "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Weekly-reported-cases">Weekly reported cases<a class="anchor-link" href="#Weekly-reported-cases">&#182;</a></h2><p>Same chart as above but showing cases instead of deaths. Cases are reported daily.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-18adfe4bd6f04fd0b0ec96a6f06c2042"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-18adfe4bd6f04fd0b0ec96a6f06c2042") {
+      outputDiv = document.getElementById("altair-viz-18adfe4bd6f04fd0b0ec96a6f06c2042");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"axis": {"labelFontSize": 12, "labelColor": "#666", "titleFontSize": 14, "titleFontWeight": "normal", "titleColor": "#666"}, "axisX": {"grid": false, "gridWidth": 0.4}, "axisY": {"gridDash": [3], "gridWidth": 0.4}, "legend": {"titleFontSize": 14, "titleFontWeight": "normal", "titleColor": "#666", "labelColor": "#666", "labelFontSize": 13}, "font": "Avenir Next, sans-serif", "header": {"labelFontSize": 14, "labelColor": "#666", "titleFontSize": 16, "titleFontWeight": "normal", "titleColor": "#666"}, "headerRow": {"labelFontSize": 14, "labelColor": "#666"}, "title": {"anchor": "start", "frame": "group", "offset": 10, "fontSize": 24, "font": "Avenir Next Demi Bold"}, "view": {"strokeWidth": 0, "continuousWidth": 600, "continuousHeight": 400}}, "data": {"url": "https://raw.githubusercontent.com/morberg/covid-notebook/master/data/cases.json"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "Statistikdatum", "legend": {"orient": "top-left"}, "sort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "timeUnit": "day", "title": "Day reported"}, "order": {"type": "nominal", "field": "Statistikdatum"}, "tooltip": [{"type": "quantitative", "aggregate": "sum", "field": "Fall", "title": "Number of Cases"}, {"type": "temporal", "field": "Statistikdatum", "title": "Date reported"}], "x": {"type": "ordinal", "field": "Vecka", "title": null}, "y": {"type": "quantitative", "aggregate": "sum", "axis": {"offset": 10, "orient": "right", "title": null}, "field": "Fall"}}, "title": {"text": "Weekly Covid-19 Cases in Sweden", "subtitle": "Updated on Thursday, December 10"}, "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
