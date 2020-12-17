@@ -47,7 +47,7 @@ def get_lag_data():
     )
 
     df2 = df2.rename(
-        columns={"prediction_date": "publication_date", "total": "prediction"}
+        columns={"prediction_date": "publication_date", "total.model": "prediction"}
     )
     df2 = df2.set_index(["date", "publication_date"])[["prediction"]]
     merged = pd.concat([df1, df2], axis=1, sort=False).reset_index()
@@ -126,6 +126,6 @@ def merge_data(data_scb, data_fhm):
     data = data.reset_index()
     data = data.melt("date", var_name="death_cause", value_name="deaths")
     data = data.fillna(0)
-    
+
     # FHM data is newer than SCB which will result in "negative" deaths in the tail
     return data.loc[data.deaths >= 0]
