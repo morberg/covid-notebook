@@ -1,6 +1,6 @@
 # Python notebooks for Swedish Covid-19 data
 
-Notebooks for analysing Covid-19 deaths reporter by FHM and total mortality from SCB.
+Notebooks for analysing Covid-19 deaths reported by FHM and total mortality from SCB.
 
 If you don't want to install a Jupyter notebook environment you can view the most useful charts on:
 
