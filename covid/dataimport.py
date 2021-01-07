@@ -113,7 +113,7 @@ def merge_data(data_scb, data_fhm):
         Data containing SCB and FHM statistics
     """
     scb = data_scb[data_scb.date.notna()].groupby("date").sum()
-    fhm = data_fhm.set_index("date").max(level="date")[["N"]]
+    fhm = data_fhm.dropna().set_index("date").max(level="date")[["N"]]
 
     data = pd.concat([scb, fhm], axis=1, sort=False)
     data = data[data.index.notna()]
