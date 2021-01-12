@@ -5,7 +5,7 @@ name: Daily update of data and charts
 
 on:
   schedule:
-      # Depends on csv file generated daily at 14:15-ish.
+      # Depends on csv file generated daily at 14:15-ish, run this at 14:17.
       # UTC is currently -1 wrt Europe/Stockholm (CEST).
       - cron: "17 13 * * *"
 
