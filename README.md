@@ -4,7 +4,7 @@ Notebooks for analysing Covid-19 deaths reported by FHM and total mortality from
 
 If you don't want to install a Jupyter notebook environment you can view the most useful charts on:
 
-* [Covid-19 statistics](https://morberg.github.io/covid-notebook/covid.html) (updated weekdays at 14:20)
+* [Covid-19 statistics](https://morberg.github.io/covid-notebook/covid.html) (updated weekdays at 15:20)
 * [Excess mortality](https://morberg.github.io/covid-notebook/excess.html) (updated on Mondays)
 
 
