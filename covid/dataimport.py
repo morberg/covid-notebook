@@ -14,14 +14,13 @@ def get_lag_data():
         Labels for column 'lag' in data
     """
 
-    bins = [-1, 0, 2, 5, 11, 17, 26, 200]
+    bins = [-1, 2, 5, 9, 17, 200]
     labels = [
         "0-1",
         "2-4",
-        "5-10",
-        "11-16",
-        "17-25",
-        "26+",
+        "5-8",
+        "9-16",
+        "17+",
     ]
 
     date_cols = ["date", "publication_date"]
