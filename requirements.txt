@@ -2,7 +2,7 @@ altair==4.1.0
 altair_morberg>=0.0.1
 attrs==19.3.0
 entrypoints==0.3
-Jinja2==2.11.2
+Jinja2==2.11.3
 jsonschema==3.2.0
 MarkupSafe==1.1.1
 numpy==1.18.4
